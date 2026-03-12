@@ -22,7 +22,9 @@ public class design {
 
         JPanel panel = new JPanel();
         panel.setLayout(null);
-        panel.setBounds(40, 80, 420, 320);
+        panel.setBounds(40, 80, 420, 350);
+        panel.setBackground(Color.gray);
+
 
         Border border = BorderFactory.createLineBorder(Color.BLACK);
 
