@@ -7,6 +7,7 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
@@ -74,8 +75,9 @@ public class design {
                 String place = (String) provinceComboBox.getSelectedItem();
                 String comment = addressArea.getText();
 
-                System.out.println("Email: " + email + "\nGender: " + gender + "\nPlace: " + place
-                + "\nComment: " + comment);
+                String details = "Email: " + email + "\nGender: " + gender + "\nPlace: " + place
+                + "\nComment: " + comment;
+                JOptionPane.showMessageDialog(frame, details, "Full Details", JOptionPane.INFORMATION_MESSAGE);
             }
         });
 
