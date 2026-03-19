@@ -1,4 +1,6 @@
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.BorderFactory;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
@@ -64,6 +66,13 @@ public class design {
         JButton submitButton = new JButton("Submit");
         submitButton.setBounds(150, 270, 120, 35);
         panel.add(submitButton);
+
+        submitButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+                String email = emailField.getText();
+                System.out.println(email);
+            }
+        });
 
         frame.add(panel);
         frame.setVisible(true);
