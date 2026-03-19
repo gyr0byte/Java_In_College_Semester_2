@@ -70,10 +70,13 @@ public class design {
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
                 String email = emailField.getText();
-                System.out.println(email);
+                String gender = maleButton.isSelected() ? "Male" : "Female";
+                String place = (String) provinceComboBox.getSelectedItem();
+                System.out.println("Email: " + email + "\nGender: " + gender + "\nPlace: " + place);
             }
         });
 
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel);
         frame.setVisible(true);
     }
