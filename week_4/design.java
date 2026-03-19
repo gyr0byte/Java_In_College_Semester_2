@@ -72,7 +72,10 @@ public class design {
                 String email = emailField.getText();
                 String gender = maleButton.isSelected() ? "Male" : "Female";
                 String place = (String) provinceComboBox.getSelectedItem();
-                System.out.println("Email: " + email + "\nGender: " + gender + "\nPlace: " + place);
+                String comment = addressArea.getText();
+
+                System.out.println("Email: " + email + "\nGender: " + gender + "\nPlace: " + place
+                + "\nComment: " + comment);
             }
         });
 
