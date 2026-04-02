@@ -69,6 +69,7 @@ public class design {
         panel.add(submitButton);
 
         submitButton.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent e){
                 String email = emailField.getText();
                 String gender = maleButton.isSelected() ? "Male" : "Female";
