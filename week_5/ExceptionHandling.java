@@ -30,6 +30,9 @@ public class ExceptionHandling {
         catch(Exception e){
             System.out.println("An unexpected error occurred.");
         }
-        sc.close();
+        finally{
+            sc.close();
+        }
+        
     }
 }
