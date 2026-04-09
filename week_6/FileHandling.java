@@ -27,7 +27,7 @@ public class FileHandling {
             System.out.println("Something went wrong while writing to the file!");
         }
         try {
-            FileReader reader = new FileReader(file);
+            FileReader reader = new FileReader("./MyDetails/AboutMe.txt");
             Scanner sc = new Scanner(reader);
             while (sc.hasNextLine()) {
                 String line = sc.nextLine();
