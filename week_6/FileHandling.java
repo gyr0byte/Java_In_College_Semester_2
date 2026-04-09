@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileHandling {
@@ -15,5 +16,14 @@ public class FileHandling {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        try {
+            FileWriter writer = new FileWriter(file);
+            writer.write("Hello World, I am learning file handling in java");
+            writer.close();
+        } 
+        catch (IOException e) {
+            System.out.println("Something went wrong while writing to the file!");
+        }
+
     } 
 }
