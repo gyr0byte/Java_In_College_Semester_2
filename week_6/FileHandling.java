@@ -1,6 +1,8 @@
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class FileHandling {
     public static void main(String[] args) {
@@ -24,6 +26,16 @@ public class FileHandling {
         catch (IOException e) {
             System.out.println("Something went wrong while writing to the file!");
         }
-
+        try {
+            FileReader reader = new FileReader(file);
+            Scanner sc = new Scanner(reader);
+            while (sc.hasNextLine()) {
+                String line = sc.nextLine();
+                System.out.println(line);
+            }
+            reader.close();
+        } catch (IOException e) {
+            System.out.println("Something went wrong while reading the file!");
+        }
     } 
 }
