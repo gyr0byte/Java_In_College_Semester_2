@@ -1,5 +1,6 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -53,7 +54,7 @@ class BIT extends Student {
 public class ExceptionandFileHandling {
 
     public static void main(String[] args) {
-        // ArrayList<Student> students = new ArrayList<>();
+        ArrayList<Student> students = new ArrayList<>();
 
         JFrame frame = new JFrame("Student Management System");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -105,6 +106,8 @@ public class ExceptionandFileHandling {
                 } else if (bitButton.isSelected()) {
                     section = "BIT";
                 }
+                Student student = new Student(id, name, section);
+                students.add(student);
                 System.out.println("Student added: " + name + ", ID: " + id + ", Section: " + section);
             }
         });
@@ -117,7 +120,6 @@ public class ExceptionandFileHandling {
         displayButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
             }
         });
 
