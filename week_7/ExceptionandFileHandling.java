@@ -1,16 +1,10 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.util.ArrayList;
-import java.util.Scanner;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
-import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
@@ -103,7 +97,15 @@ public class ExceptionandFileHandling {
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                String name = nameField.getText();
+                int id = Integer.parseInt(idField.getText());
+                String section = "";
+                if (bbaButton.isSelected()) {
+                    section = "BBA";
+                } else if (bitButton.isSelected()) {
+                    section = "BIT";
+                }
+                System.out.println("Student added: " + name + ", ID: " + id + ", Section: " + section);
             }
         });
 
