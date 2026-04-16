@@ -106,7 +106,12 @@ public class ExceptionandFileHandling {
                 } else if (bitButton.isSelected()) {
                     section = "BIT";
                 }
-                Student student = new Student(id, name, section);
+                Student student;
+                if (section.equals("BBA")) {
+                    student = new BBA(id, name, section);
+                } else {
+                    student = new BIT(id, name, section);
+                }
                 students.add(student);
                 System.out.println("Student added: " + name + ", ID: " + id + ", Section: " + section);
             }
