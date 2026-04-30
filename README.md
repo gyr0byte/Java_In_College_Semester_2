@@ -1,6 +1,34 @@
-# Java Lab Work - Semester 2
+# Java Lab Work Portfolio - Semester 2
 
-A week-by-week collection of Java practice programs covering core language basics, Swing GUI design, exception handling, file I/O, and a simple object-oriented mini project.
+![Java](https://img.shields.io/badge/Language-Java-orange?logo=openjdk&logoColor=white)
+![JDK](https://img.shields.io/badge/JDK-8%2B-blue)
+![UI](https://img.shields.io/badge/Desktop_UI-Java_Swing-2ea44f)
+![Focus](https://img.shields.io/badge/Focus-OOP%2C%20Exceptions%2C%20File%20Handling-informational)
+![Status](https://img.shields.io/badge/Status-Academic%20Portfolio-success)
+
+A structured week-by-week Java practice portfolio demonstrating progression from language fundamentals to GUI applications, exception handling, and file operations.
+
+## Student & Course Details
+
+- **Name:** Gaurav Dulal
+- **Course Title:** Java Programming Lab (Semester 2)
+- **College:** Itahari International College
+
+## Portfolio Highlights
+
+- Progressive weekly development from beginner to intermediate Java concepts
+- Hands-on Swing GUI forms with event-driven actions
+- Practical exception handling and custom validation examples
+- Real file creation, writing, and reading workflows
+- Introductory OOP mini-system with inheritance (`Student`, `BBA`, `BIT`)
+
+## Project Goals
+
+- Build confidence in core Java syntax and program structure
+- Practice desktop UI design using Java Swing components
+- Apply robust error handling with `try/catch/finally` and custom checks
+- Work with file I/O APIs in realistic mini exercises
+- Combine OOP concepts with GUI design in a small management system
 
 ## Repository Structure
 
@@ -151,6 +179,101 @@ Then run the class you want:
 ```bash
 java FileHandling
 ```
+
+## How to Test Each Week (Quick Checklist)
+
+Use this section as a fast verification checklist before submission or review.
+
+- [ ] **Week 1 - `week_1/first.java`**
+  - Compile/run:
+    ```bash
+    cd week_1
+    javac first.java
+    java first
+    ```
+  - Expected: Output remains `Anil` (demonstrates string immutability without reassignment).
+
+- [ ] **Week 2 - `week_2/signin.java`**
+  - Compile/run:
+    ```bash
+    cd week_2
+    javac signin.java
+    java signin
+    ```
+  - Expected: Signup GUI opens with username, email, password, and Sign Up button.
+
+- [ ] **Week 3 - `week_3/design.java`**
+  - Compile/run:
+    ```bash
+    cd week_3
+    javac design.java
+    java design
+    ```
+  - Expected: Form UI opens with email, gender radio buttons, place dropdown, text area, submit button.
+
+- [ ] **Week 4 - `week_4/design.java`**
+  - Compile/run:
+    ```bash
+    cd week_4
+    javac design.java
+    java design
+    ```
+  - Expected: Form opens and clicking Submit shows entered details in a dialog box.
+
+- [ ] **Week 5 - `week_5/AgeException.java`**
+  - Compile/run:
+    ```bash
+    cd week_5
+    javac AgeException.java
+    java AgeException
+    ```
+  - Test cases:
+    - Enter `20`: prints age as valid.
+    - Enter `17`: throws age-related exception.
+
+- [ ] **Week 5 - `week_5/ExceptionHandling.java`**
+  - Compile/run:
+    ```bash
+    cd week_5
+    javac ExceptionHandling.java
+    java ExceptionHandling
+    ```
+  - Test cases:
+    - `10` and `2`: prints division result.
+    - `10` and `0`: catches division-by-zero path.
+    - Negative input: catches I/O error branch.
+
+- [ ] **Week 6 - `week_6/AboutMe.java`**
+  - Compile/run:
+    ```bash
+    cd week_6
+    javac AboutMe.java
+    java AboutMe
+    ```
+  - Expected: Creates/updates `MyDetails/AboutMe.txt` with personal details.
+
+- [ ] **Week 6 - `week_6/FileHandling.java`**
+  - Compile/run:
+    ```bash
+    cd week_6
+    javac FileHandling.java
+    java FileHandling
+    ```
+  - Expected:
+    - `MyFile.txt` is created/updated.
+    - Content from `MyDetails/AboutMe.txt` is printed to console.
+
+- [ ] **Week 7 - `week_7/ExceptionandFileHandling.java`**
+  - Compile/run:
+    ```bash
+    cd week_7
+    javac ExceptionandFileHandling.java
+    java ExceptionandFileHandling
+    ```
+  - Expected:
+    - Student Management GUI opens.
+    - Add Student appends entries to in-memory list.
+    - Display/Load/Save buttons are visible but currently placeholders.
 
 ## Notes and Limitations
 
