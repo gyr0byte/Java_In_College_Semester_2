@@ -52,7 +52,9 @@ sem_2/
 |  |- MyDetails/
 |     |- AboutMe.txt
 |- week_7/
-   |- ExceptionandFileHandling.java
+|  |- ExceptionandFileHandling.java
+|- week_extra_DSA/
+  |- LinearSearch.java
 ```
 
 ## What This Codebase Covers
@@ -63,6 +65,7 @@ sem_2/
 - Exception handling (`try`, `catch`, `finally`, custom throw conditions)
 - File handling (`File`, `FileWriter`, `FileReader`, `Scanner`)
 - Basic OOP design (inheritance with `Student`, `BBA`, `BIT`)
+- Introductory DSA implementation (linear search)
 
 ## Weekly Breakdown
 
@@ -132,6 +135,14 @@ File: `week_7/ExceptionandFileHandling.java`
 - Builds a Swing UI for adding students with ID, name, and section.
 - Stores records in an in-memory `ArrayList<Student>`.
 - Includes placeholders for display/load/save actions (buttons are present, action bodies are currently empty).
+
+### Extra Week - DSA Practice (Linear Search)
+
+File: `week_extra_DSA/LinearSearch.java`
+
+- Implements linear search with a reusable `search(int[] arr, int target)` method.
+- Returns index when target is found, otherwise `-1`.
+- Includes a simple `main` method for demonstration with sample input.
 
 ## Prerequisites
 
@@ -274,6 +285,17 @@ Use this section as a fast verification checklist before submission or review.
     - Student Management GUI opens.
     - Add Student appends entries to in-memory list.
     - Display/Load/Save buttons are visible but currently placeholders.
+
+- [ ] **Extra Week - `week_extra_DSA/LinearSearch.java`**
+  - Compile/run:
+    ```bash
+    cd week_extra_DSA
+    javac LinearSearch.java
+    java LinearSearch
+    ```
+  - Expected:
+    - Program prints found index for the sample target (`1`).
+    - For current sample array, expected output index is `3`.
 
 ## Notes and Limitations
 
